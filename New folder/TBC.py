@@ -29,7 +29,7 @@ class Character(object):
     
     @hitPoints.setter
     def hitPoints(self, value):
-        value = self.testInt(value, 0, 100, 0)
+        value = self.testInt(value, -10, 100, 0)
         self.__hitPoints = value
         
     @property
